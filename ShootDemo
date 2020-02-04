@@ -20,13 +20,8 @@ public class ShootDemo : MonoBehaviour {
  
         if (Input.GetButtonDown("fire1"))
         {
-            Rigidbody instantiatedProjectile = Instantiate(projectile,
-                                                           transform.position,
-                                                           transform.rotation)
-                as Rigidbody;
- 
+            Rigidbody instantiatedProjectile = Instantiate(projectile,transform.position,transform.rotation) as Rigidbody;
             instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0,speed));
- 
         }
     }
 }
